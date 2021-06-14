@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA0F2512-4125-4F89-93FA-1AD699046E23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ogrenci_takip_sistemi</RootNamespace>
+    <AssemblyName>ogrenci_takip_sistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baglanti.cs" />
+    <Compile Include="FormDuyuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDuyuru.Designer.cs">
+      <DependentUpon>FormDuyuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMezunPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMezunPaneli.Designer.cs">
+      <DependentUpon>FormMezunPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOgrenciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOgrenciGiris.Designer.cs">
+      <DependentUpon>FormOgrenciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOgrenciPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOgrenciPaneli.Designer.cs">
+      <DependentUpon>FormOgrenciPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOgretmenGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOgretmenGiris.Designer.cs">
+      <DependentUpon>FormOgretmenGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiris.Designer.cs">
+      <DependentUpon>FormGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOgrOgrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOgrOgrenci.Designer.cs">
+      <DependentUpon>FormOgrOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMezunGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMezunGiris.Designer.cs">
+      <DependentUpon>FormMezunGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grafik.Designer.cs">
+      <DependentUpon>grafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_takipDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrenci_takipDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDuyuru.resx">
+      <DependentUpon>FormDuyuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMezunPaneli.resx">
+      <DependentUpon>FormMezunPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOgrenciGiris.resx">
+      <DependentUpon>FormOgrenciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOgrenciPaneli.resx">
+      <DependentUpon>FormOgrenciPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOgretmenGiris.resx">
+      <DependentUpon>FormOgretmenGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiris.resx">
+      <DependentUpon>FormGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOgrOgrenci.resx">
+      <DependentUpon>FormOgrOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMezunGiris.resx">
+      <DependentUpon>FormMezunGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grafik.resx">
+      <DependentUpon>grafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ogrenci_takipDataSet.xsc">
+      <DependentUpon>ogrenci_takipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet.xss">
+      <DependentUpon>ogrenci_takipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet1.xsc">
+      <DependentUpon>ogrenci_takipDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet1.xss">
+      <DependentUpon>ogrenci_takipDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet10.xsc">
+      <DependentUpon>ogrenci_takipDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet10.xss">
+      <DependentUpon>ogrenci_takipDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet11.xsc">
+      <DependentUpon>ogrenci_takipDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet11.xss">
+      <DependentUpon>ogrenci_takipDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet12.xsc">
+      <DependentUpon>ogrenci_takipDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet12.xss">
+      <DependentUpon>ogrenci_takipDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet13.xsc">
+      <DependentUpon>ogrenci_takipDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet13.xss">
+      <DependentUpon>ogrenci_takipDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet14.xsc">
+      <DependentUpon>ogrenci_takipDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet14.xss">
+      <DependentUpon>ogrenci_takipDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet15.xsc">
+      <DependentUpon>ogrenci_takipDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet15.xss">
+      <DependentUpon>ogrenci_takipDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet16.xsc">
+      <DependentUpon>ogrenci_takipDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet16.xss">
+      <DependentUpon>ogrenci_takipDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet17.xsc">
+      <DependentUpon>ogrenci_takipDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet17.xss">
+      <DependentUpon>ogrenci_takipDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet18.xsc">
+      <DependentUpon>ogrenci_takipDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet18.xss">
+      <DependentUpon>ogrenci_takipDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet2.xsc">
+      <DependentUpon>ogrenci_takipDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet2.xss">
+      <DependentUpon>ogrenci_takipDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet3.xsc">
+      <DependentUpon>ogrenci_takipDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet3.xss">
+      <DependentUpon>ogrenci_takipDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet4.xsc">
+      <DependentUpon>ogrenci_takipDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet4.xss">
+      <DependentUpon>ogrenci_takipDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet5.xsc">
+      <DependentUpon>ogrenci_takipDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet5.xss">
+      <DependentUpon>ogrenci_takipDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet6.xsc">
+      <DependentUpon>ogrenci_takipDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet6.xss">
+      <DependentUpon>ogrenci_takipDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet7.xsc">
+      <DependentUpon>ogrenci_takipDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet7.xss">
+      <DependentUpon>ogrenci_takipDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet8.xsc">
+      <DependentUpon>ogrenci_takipDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet8.xss">
+      <DependentUpon>ogrenci_takipDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet9.xsc">
+      <DependentUpon>ogrenci_takipDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ogrenci_takipDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrenci_takipDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrenci_takipDataSet9.xss">
+      <DependentUpon>ogrenci_takipDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
